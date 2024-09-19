@@ -1,4 +1,4 @@
-'use client';
+"use client"; // This directive tells Next.js that this file is a client component
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
