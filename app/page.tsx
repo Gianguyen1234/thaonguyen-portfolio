@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-
 export default function Home() {
   return (
     <main className="flex flex-col items-center min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
@@ -11,20 +10,20 @@ export default function Home() {
       <section className="text-center py-20 px-6 relative overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 -z-10">
-            <Image
-              src="/avatar.png" 
-              alt="Funny Avatar"             
-              width={500}
-              height={500}
-              quality={75} 
-
-            />
+          <Image
+            src="/avatar.png"
+            alt="Avatar"
+            width={500}
+            height={500}
+            quality={75}
+            className="object-cover w-full h-full"
+          />
         </div>
 
         {/* Text Overlay */}
         <div className="relative">
           <motion.h1
-            className="text-6xl md:text-7xl font-extrabold mb-6 leading-tight"
+            className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -32,12 +31,12 @@ export default function Home() {
             Welcome to My Portfolio
           </motion.h1>
           <motion.p
-            className="text-lg md:text-2xl mb-8 mx-auto max-w-2xl"
+            className="text-lg md:text-xl mb-8 mx-auto max-w-3xl"
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            Explore my projects and get to know how I build modern web applications with Next.js and Tailwind CSS.
+            I'm passionate about crafting dynamic web applications and continuously learning new technologies. This portfolio showcases my self-driven journey into PHP development and the projects I've been working on.
           </motion.p>
           <motion.a
             href="/projects"
@@ -67,7 +66,6 @@ export default function Home() {
             objectFit="cover"
             className="border-4 border-blue-600 shadow-lg transform transition-transform duration-500 hover:scale-110"
           />
-          
         </motion.div>
 
         {/* About Me Card */}
@@ -77,10 +75,9 @@ export default function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold mb-4 relative">About Me</h2>
+          <h2 className="text-3xl font-bold mb-4 relative">About Me</h2>
           <p className="text-lg">
-            I’m a web developer with a passion for creating immersive and visually stunning web applications. 
-            With expertise in Next.js, React, and Tailwind CSS, I love crafting experiences that captivate and engage.
+            I’m a web developer with a passion for building dynamic and engaging web applications. As a dedicated self-learner, I am actively developing my skills in PHP and other web technologies. This portfolio reflects my commitment to continuous learning and showcases the practical work I've done so far.
           </p>
         </motion.div>
       </section>
@@ -88,7 +85,7 @@ export default function Home() {
       {/* Featured Projects Section */}
       <section id="projects" className="bg-gray-800 p-8 rounded-lg my-12 mx-4 max-w-6xl">
         <motion.h2
-          className="text-4xl font-bold mb-6 relative"
+          className="text-3xl font-bold mb-6 relative"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -103,8 +100,8 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h3 className="text-2xl font-bold mb-3">Project Title</h3>
-            <p className="text-md mb-4">An engaging project showcasing advanced web technologies with a sleek and modern design.</p>
+            <h3 className="text-xl font-bold mb-3">Project Title</h3>
+            <p className="text-md mb-4">A project that demonstrates my skills in web development with a modern design and functionality.</p>
             <a href="#" className="text-blue-400 hover:underline">View Project</a>
           </motion.div>
           {/* Add more project cards here */}
@@ -114,7 +111,7 @@ export default function Home() {
       {/* Contact Section */}
       <section className="text-center py-12 px-4">
         <motion.h2
-          className="text-4xl font-bold mb-6 relative"
+          className="text-3xl font-bold mb-6 relative"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
