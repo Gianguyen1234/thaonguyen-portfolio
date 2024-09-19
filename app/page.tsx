@@ -12,11 +12,12 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 -z-10">
             <Image
-              src="/ninja.png"  // Ensure this URL is correct
-              alt="Funny Avatar"
-              fill
-              style={{ objectFit: 'cover', opacity: 1 }}  // Use inline style for objectFit
-              className="opacity-50"
+              src="/avatar.png" // Ensure this URL is correct
+              alt="Funny Avatar"             
+              width={500}
+              height={500}
+              quality={75} // Adjust quality for smaller file sizes
+
             />
         </div>
 
@@ -39,7 +40,7 @@ export default function Home() {
             Explore my projects and get to know how I build modern web applications with Next.js and Tailwind CSS.
           </motion.p>
           <motion.a
-            href="#projects"
+            href="/projects"
             className="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -60,12 +61,13 @@ export default function Home() {
           transition={{ duration: 0.8 }}
         >
           <Image
-            src=""
+            src="/avatar.png"
             alt="Profile Image"
             layout="fill"
             objectFit="cover"
             className="border-4 border-blue-600 shadow-lg transform transition-transform duration-500 hover:scale-110"
           />
+          
         </motion.div>
 
         {/* About Me Card */}
