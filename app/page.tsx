@@ -1,101 +1,141 @@
-import Image from "next/image";
+'use client';
+
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main className="flex flex-col items-center min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
+      {/* Hero Section */}
+      <section className="text-center py-20 px-6 relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 -z-10">
             <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/ninja.png"  // Ensure this URL is correct
+              alt="Funny Avatar"
+              fill
+              style={{ objectFit: 'cover', opacity: 1 }}  // Use inline style for objectFit
+              className="opacity-50"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+
+        {/* Text Overlay */}
+        <div className="relative">
+          <motion.h1
+            className="text-6xl md:text-7xl font-extrabold mb-6 leading-tight"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Welcome to My Portfolio
+          </motion.h1>
+          <motion.p
+            className="text-lg md:text-2xl mb-8 mx-auto max-w-2xl"
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+          >
+            Explore my projects and get to know how I build modern web applications with Next.js and Tailwind CSS.
+          </motion.p>
+          <motion.a
+            href="#projects"
+            className="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.6 }}
+          >
+            Explore My Work
+          </motion.a>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="flex flex-col md:flex-row items-center my-12 mx-4 max-w-6xl relative">
+        {/* Profile Image */}
+        <motion.div
+          className="flex-shrink-0 w-64 h-64 mb-6 md:mb-0 relative overflow-hidden rounded-full"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
         >
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src=""
+            alt="Profile Image"
+            layout="fill"
+            objectFit="cover"
+            className="border-4 border-blue-600 shadow-lg transform transition-transform duration-500 hover:scale-110"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        </motion.div>
+
+        {/* About Me Card */}
+        <motion.div
+          className="bg-gray-800 p-8 rounded-lg shadow-xl md:ml-8 flex-1 relative overflow-hidden"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <h2 className="text-4xl font-bold mb-4 relative">About Me</h2>
+          <p className="text-lg">
+            I’m a web developer with a passion for creating immersive and visually stunning web applications. With expertise in Next.js, React, and Tailwind CSS, I love crafting experiences that captivate and engage.
+          </p>
+        </motion.div>
+      </section>
+
+      {/* Featured Projects Section */}
+      <section id="projects" className="bg-gray-800 p-8 rounded-lg my-12 mx-4 max-w-6xl">
+        <motion.h2
+          className="text-4xl font-bold mb-6 relative"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
         >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          Featured Projects
+        </motion.h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Project Card Example */}
+          <motion.div
+            className="bg-gray-700 p-6 rounded-lg shadow-xl transform hover:scale-105 transition duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h3 className="text-2xl font-bold mb-3">Project Title</h3>
+            <p className="text-md mb-4">An engaging project showcasing advanced web technologies with a sleek and modern design.</p>
+            <a href="#" className="text-blue-400 hover:underline">View Project</a>
+          </motion.div>
+          {/* Add more project cards here */}
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="text-center py-12 px-4">
+        <motion.h2
+          className="text-4xl font-bold mb-6 relative"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          Get in Touch
+        </motion.h2>
+        <motion.p
+          className="text-lg mb-8 max-w-2xl mx-auto relative"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
+          Ready to start a new project or just want to chat? Feel free to reach out!
+        </motion.p>
+        <motion.a
+          href="/contact"
+          className="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105 relative"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          Contact Me
+        </motion.a>
+      </section>
+    </main>
   );
 }
