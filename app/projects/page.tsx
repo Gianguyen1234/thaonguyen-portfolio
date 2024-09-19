@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Filter from '../components/filter'; 
+import Image from 'next/image'; // Import Image from next/image
 
 const allProjects = [
   { title: 'PHP E-commerce Platform - Clothing Store', category: 'PHP', image: 'https://via.placeholder.com/500x300', description: 'This project provides a fully functional online store where users can browse products, add them to a shopping cart, place orders, and receive support via a question-based chatbot. The system includes features like user authentication, order management, product history, product comments, and a fully functional admin panel to manage products, orders, and users.', githubLink: 'https://github.com/Gianguyen1234/PHP_WEB_ECOMMERCIAL' },
@@ -26,11 +27,15 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
             <div key={project.title} className="bg-gradient-to-r from-violet-500 via-pink-500 to-cyan-500 rounded-lg shadow-2xl overflow-hidden transform transition-transform hover:rotate-3d hover:scale-105 hover:shadow-xl">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
-              />
+              <div className="relative w-full h-48">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-transform duration-500 ease-in-out transform hover:scale-110"
+                />
+              </div>
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <h2 className="text-3xl font-bold text-white">{project.title}</h2>
