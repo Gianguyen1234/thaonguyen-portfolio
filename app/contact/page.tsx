@@ -1,22 +1,50 @@
 export default function Contact() {
     return (
-      <main className="p-8 max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-6">Contact Me</h1>
-        <p className="text-lg mb-4">I’d love to hear from you! Feel free to get in touch for any inquiries or collaboration opportunities.</p>
-        <form className="space-y-4">
+      <main className="p-8 max-w-3xl mx-auto bg-gradient-to-r from-indigo-900 via-teal-800 to-gray-900 rounded-lg shadow-xl mt-16">
+        {/* Header and Description */}
+        <div className="text-center mb-10">
+          <h1 className="text-4xl font-semibold text-white mb-4">Contact Me</h1>
+          <p className="text-lg text-gray-300">
+            I’m eager to hear from you. Please reach out with any questions or opportunities for collaboration.
+          </p>
+        </div>
+  
+        {/* Contact Form */}
+        <form className="space-y-6 bg-gray-800 p-6 rounded-lg shadow-md">
           <div>
-            <label htmlFor="name" className="block text-lg font-medium mb-1">Name</label>
-            <input type="text" id="name" className="w-full p-2 border rounded-md" required />
+            <label htmlFor="name" className="block text-lg font-medium text-gray-200 mb-2">Name</label>
+            <input
+              type="text"
+              id="name"
+              className="w-full p-3 border border-gray-700 rounded-md shadow-sm bg-gray-900 text-white focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition duration-300 ease-in-out"
+              placeholder="John Doe"
+              required
+            />
           </div>
           <div>
-            <label htmlFor="email" className="block text-lg font-medium mb-1">Email</label>
-            <input type="email" id="email" className="w-full p-2 border rounded-md" required />
+            <label htmlFor="email" className="block text-lg font-medium text-gray-200 mb-2">Email</label>
+            <input
+              type="email"
+              id="email"
+              className="w-full p-3 border border-gray-700 rounded-md shadow-sm bg-gray-900 text-white focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition duration-300 ease-in-out"
+              placeholder="john.doe@example.com"
+              required
+            />
           </div>
           <div>
-            <label htmlFor="message" className="block text-lg font-medium mb-1">Message</label>
-            <textarea id="message" rows={4} className="w-full p-2 border rounded-md" required></textarea>
+            <label htmlFor="message" className="block text-lg font-medium text-gray-200 mb-2">Message</label>
+            <textarea
+              id="message"
+              rows={6}
+              className="w-full p-3 border border-gray-700 rounded-md shadow-sm bg-gray-900 text-white focus:ring-1 focus:ring-teal-500 focus:border-teal-500 transition duration-300 ease-in-out"
+              placeholder="Your message here..."
+              required
+            ></textarea>
           </div>
-          <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
+          <button
+            type="submit"
+            className="w-full bg-teal-600 text-white py-3 px-4 rounded-lg shadow-md hover:bg-teal-700 transition duration-300 ease-in-out"
+          >
             Send Message
           </button>
         </form>
