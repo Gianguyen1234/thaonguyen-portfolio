@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css"; // Import your global styles
-
 import Navbar from "./components/navbar"; // Import Navbar
 import Footer from "./components/footer"; // Import Footer
 
@@ -21,6 +20,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Thaonguyen's Portfolio",
   description: "Showcasing my projects, skills, and experience.",
+  icons: {
+    icon: "https://tinypng.com/static/images/george-account-page.webp", // Path to your favicon in the public folder
+  },
 };
 
 // Root Layout Component
