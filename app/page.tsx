@@ -36,7 +36,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            I&apos;m passionate about crafting dynamic web applications and continuously learning new technologies. This portfolio showcases my self-driven journey into PHP development and the projects I&apos;ve been working on.
+            I am passionate about crafting dynamic web applications and continuously learning new technologies. This portfolio showcases my self-driven journey into PHP development and the projects I have been working on.
           </motion.p>
           <motion.a
             href="/projects"
@@ -77,7 +77,7 @@ export default function Home() {
         >
           <h2 className="text-3xl font-bold mb-4 relative">About Me</h2>
           <p className="text-lg">
-            I&apos;m a web developer with a passion for building dynamic and engaging web applications. As a dedicated self-learner, I am actively developing my skills in PHP and other web technologies. This portfolio reflects my commitment to continuous learning and showcases the practical work I&apos;ve done so far.
+            I am a enthusiastic developer with a passion for building dynamic and engaging web applications. As a dedicated self-learner, I am actively developing my skills in PHP and other web technologies. This portfolio reflects my commitment to continuous learning and showcases the practical work I have done so far.
           </p>
         </motion.div>
       </section>
