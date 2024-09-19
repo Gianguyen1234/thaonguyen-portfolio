@@ -6,10 +6,10 @@ export default function About() {
       <div className="max-w-4xl w-full bg-gradient-to-r from-gray-700 via-gray-800 to-gray-700 rounded-lg shadow-lg p-8">
         <h1 className="text-4xl font-bold mb-6 text-gray-200">About Me</h1>
         <p className="text-lg mb-4 text-gray-300">
-          Hi! I'm Thao Nguyen, an enthusiastic developer with an insatiable appetite for learning and exploring new technologies. Currently, I'm diving into PHP and mastering the Laravel framework while also building dynamic WordPress websites. I thrive on the thrill of solving complex problems and developing new skills with each project.
+          Hi! I am Thao Nguyen, an enthusiastic developer with an insatiable appetite for learning and exploring new technologies. Currently, I am diving into PHP and mastering the Laravel framework while also building dynamic WordPress websites. I thrive on the thrill of solving complex problems and developing new skills with each project.
         </p>
         <p className="text-lg mb-4 text-gray-300">
-          My journey in tech is driven by curiosity and a passion for innovation. Whether it's refining my skills or tackling a challenging problem, I'm always eager to embrace new learning opportunities.
+          My journey in tech is driven by curiosity and a passion for innovation. Whether it is refining my skills or tackling a challenging problem, I am always eager to embrace new learning opportunities.
         </p>
         <p className="text-lg text-gray-300">
           Feel free to check out my blogs where I share my insights and experiences:
