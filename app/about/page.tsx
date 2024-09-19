@@ -30,7 +30,7 @@ export default function About() {
           Connect with me on social media:
         </p>
         <div className="flex space-x-4 mb-4">
-          <a href="https://github.com/your-username" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Gianguyen1234" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github fa-2x"></i>
           </a>
           <a href="https://facebook.com/your-profile" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">
