@@ -16,12 +16,12 @@ export default function About() {
         </p>
         <ul className="list-disc list-inside mb-4 text-gray-300">
           <li>
-            <a href="https://kafkatraining.com" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">
+            <a href="https://kafkablog.kesug.com/" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">
               KafkaBlog: A community-driven space where language learners and tech enthusiasts converge.
             </a>
           </li>
           <li>
-            <a href="https://hashnode.com/@harry" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">
+            <a href="https://harrypage.hashnode.dev/" className="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">
               Hashnode Blog: My personal space where I document my coding journey, explore the latest in web development, and share tips and tricks.
             </a>
           </li>
