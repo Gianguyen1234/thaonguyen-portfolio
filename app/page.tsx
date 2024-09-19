@@ -77,7 +77,7 @@ export default function Home() {
         >
           <h2 className="text-3xl font-bold mb-4 relative">About Me</h2>
           <p className="text-lg">
-            I’m a web developer with a passion for building dynamic and engaging web applications. As a dedicated self-learner, I am actively developing my skills in PHP and other web technologies. This portfolio reflects my commitment to continuous learning and showcases the practical work I've done so far.
+            I'm a web developer with a passion for building dynamic and engaging web applications. As a dedicated self-learner, I am actively developing my skills in PHP and other web technologies. This portfolio reflects my commitment to continuous learning and showcases the practical work I've done so far.
           </p>
         </motion.div>
       </section>

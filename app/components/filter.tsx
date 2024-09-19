@@ -4,10 +4,10 @@ import { useState } from 'react';
 
 const categories = [
   'All',
-  'Web Development',
-  'Design',
-  'Machine Learning',
-  'Other',
+  'PHP',
+  'Kotlin',
+  'Typescript',
+  'PHP-Laravel',
 ];
 
 interface FilterProps {

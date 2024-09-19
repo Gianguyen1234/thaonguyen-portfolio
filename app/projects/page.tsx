@@ -4,10 +4,10 @@ import { useState } from 'react';
 import Filter from '../components/filter'; 
 
 const allProjects = [
-  { title: 'Web Project 1', category: 'Web Development', image: 'https://via.placeholder.com/500x300', description: 'A web development project.', githubLink: 'https://github.com/your-username/web-project-1' },
-  { title: 'Design Project 1', category: 'Design', image: 'https://via.placeholder.com/500x300', description: 'A design project.', githubLink: 'https://github.com/your-username/design-project-1' },
-  { title: 'ML Project 1', category: 'Machine Learning', image: 'https://via.placeholder.com/500x300', description: 'A machine learning project.', githubLink: 'https://github.com/your-username/ml-project-1' },
-  { title: 'Other Project 1', category: 'Other', image: 'https://via.placeholder.com/500x300', description: 'An other type of project.', githubLink: 'https://github.com/your-username/other-project-1' },
+  { title: 'PHP E-commerce Platform - Clothing Store', category: 'PHP', image: 'https://via.placeholder.com/500x300', description: 'This project provides a fully functional online store where users can browse products, add them to a shopping cart, place orders, and receive support via a question-based chatbot. The system includes features like user authentication, order management, product history, product comments, and a fully functional admin panel to manage products, orders, and users.', githubLink: 'https://github.com/Gianguyen1234/PHP_WEB_ECOMMERCIAL' },
+  { title: 'Student-management-system', category: 'Typescript', image: 'https://via.placeholder.com/500x300', description: 'a superplate project with refine ', githubLink: 'https://github.com/Gianguyen1234/Student-Management-System' },
+  { title: 'Amphibians', category: 'Kotlin', image: 'https://via.placeholder.com/500x300', description: 'A jetpack compose app for calling and retrieving the Api.', githubLink: 'https://github.com/Gianguyen1234/Amphibians' },
+  { title: 'Blog Post ', category: 'PHP-Laravel', image: 'https://via.placeholder.com/500x300', description: 'A blog post project with Laravel', githubLink: 'https://github.com/Gianguyen1234/BlogPost_PHP_Laravel' },
   // Add more projects as needed
 ];
 
