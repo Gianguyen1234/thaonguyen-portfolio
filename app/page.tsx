@@ -1,4 +1,4 @@
-"use client"; // This directive tells Next.js that this file is a client component
+"use client"; 
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -6,9 +6,9 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <main className="flex flex-col items-center min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
-      {/* Hero Section */}
+    
       <section className="text-center py-20 px-6 relative overflow-hidden">
-        {/* Background Image */}
+ 
         <div className="absolute inset-0 -z-10">
           <Image
             src="/avatar.png"
@@ -20,7 +20,7 @@ export default function Home() {
           />
         </div>
 
-        {/* Text Overlay */}
+
         <div className="relative">
           <motion.h1
             className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight"
@@ -50,9 +50,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
+
       <section className="flex flex-col md:flex-row items-center my-12 mx-4 max-w-6xl relative">
-        {/* Profile Image */}
+   
         <motion.div
           className="flex-shrink-0 w-64 h-64 mb-6 md:mb-0 relative overflow-hidden rounded-full"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -68,7 +68,7 @@ export default function Home() {
           />
         </motion.div>
 
-        {/* About Me Card */}
+       
         <motion.div
           className="bg-gray-800 p-8 rounded-lg shadow-xl md:ml-8 flex-1 relative overflow-hidden"
           initial={{ opacity: 0, x: -50 }}
@@ -93,7 +93,7 @@ export default function Home() {
           Featured Projects
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Project Card Example */}
+         
           <motion.div
             className="bg-gray-700 p-6 rounded-lg shadow-xl transform hover:scale-105 transition duration-300"
             initial={{ opacity: 0, y: 20 }}
@@ -104,11 +104,11 @@ export default function Home() {
             <p className="text-md mb-4">A project that demonstrates my skills in web development with a modern design and functionality.</p>
             <a href="#" className="text-blue-400 hover:underline">View Project</a>
           </motion.div>
-          {/* Add more project cards here */}
+         
         </div>
       </section>
 
-      {/* Contact Section */}
+      
       <section className="text-center py-12 px-4">
         <motion.h2
           className="text-3xl font-bold mb-6 relative"
