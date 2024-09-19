@@ -12,11 +12,11 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 -z-10">
             <Image
-              src="/avatar.png" // Ensure this URL is correct
+              src="/avatar.png" 
               alt="Funny Avatar"             
               width={500}
               height={500}
-              quality={75} // Adjust quality for smaller file sizes
+              quality={75} 
 
             />
         </div>
@@ -79,7 +79,8 @@ export default function Home() {
         >
           <h2 className="text-4xl font-bold mb-4 relative">About Me</h2>
           <p className="text-lg">
-            I’m a web developer with a passion for creating immersive and visually stunning web applications. With expertise in Next.js, React, and Tailwind CSS, I love crafting experiences that captivate and engage.
+            I’m a web developer with a passion for creating immersive and visually stunning web applications. 
+            With expertise in Next.js, React, and Tailwind CSS, I love crafting experiences that captivate and engage.
           </p>
         </motion.div>
       </section>
