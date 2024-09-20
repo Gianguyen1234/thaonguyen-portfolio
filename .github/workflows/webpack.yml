@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.18.2]
+        node-version: [18.x, 20.x, 22.x]
 
     steps:
     - uses: actions/checkout@v4
@@ -30,6 +30,6 @@ jobs:
       run: |
         npm install --save-dev webpack-cli
 
-    - name: Build with Webpack
+    - name: Build in production mode
       run: |
-        npx webpack
+        npx webpack --config webpack.config.js --mode production
