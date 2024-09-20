@@ -43,7 +43,7 @@ export default function Home() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
           >
-            Explore My Work
+            Explore My Projects
           </motion.a>
         </div>
       </section>
