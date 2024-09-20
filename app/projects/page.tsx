@@ -9,7 +9,7 @@ const allProjects = [
   { title: 'Student-management-system', category: 'Typescript', image: 'https://via.placeholder.com/500x300', description: 'a superplate project with refine ', githubLink: 'https://github.com/Gianguyen1234/Student-Management-System' },
   { title: 'Amphibians', category: 'Kotlin', image: 'https://via.placeholder.com/500x300', description: 'A jetpack compose app for calling and retrieving the Api.', githubLink: 'https://github.com/Gianguyen1234/Amphibians' },
   { title: 'Blog Post ', category: 'PHP-Laravel', image: 'https://via.placeholder.com/500x300', description: 'A blog post project with Laravel', githubLink: 'https://github.com/Gianguyen1234/BlogPost_PHP_Laravel' },
-  // Add more projects as needed
+ 
 ];
 
 export default function Projects() {

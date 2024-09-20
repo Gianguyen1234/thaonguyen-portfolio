@@ -4,7 +4,7 @@ const nextConfig = {
       remotePatterns: [
         {
           protocol: 'https',
-          hostname: 'api.dicebear.com',
+          hostname: 'pm1.aminoapps.com',
         },
         {
           protocol: 'https',
