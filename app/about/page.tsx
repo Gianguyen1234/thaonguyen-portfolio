@@ -13,7 +13,7 @@ export default function About() {
         {/* About Section */}
         <div className="mb-8">
           <h2 className="text-3xl font-semibold text-gray-200 mb-4">
-            <i className="fas fa-user-circle mr-2 text-blue-400"></i> Who I Am ?
+            <i className="fas fa-user-circle mr-2 text-blue-400"></i> Who I Am 
           </h2>
           <p className="text-lg text-gray-300 mb-4">
             Hello! I am Thao Nguyen, a developer who loves to learn and try new things. I am focused on PHP and Laravel right now. I also work on WordPress websites. I enjoy solving problems and getting better with every project I work on.
