@@ -20,7 +20,7 @@ export default function Navbar() {
             <Link href="/">
               <div className="flex items-center cursor-pointer">
                 <i className="fas fa-user-circle fa-2x mr-2"></i>
-                My Portfolio
+                TN
               </div>
             </Link>
           </div>
