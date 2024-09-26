@@ -30,7 +30,8 @@ export default function Projects() {
             View All
           </button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        {/* Updated grid layout with auto-fit and minmax */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 grid-cols-auto-fit">
           {filteredProjects.map((project) => (
             <div key={project.title} className="relative rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl hover:backdrop-blur-sm hover:shadow-blue-500/50">
               <div className="absolute inset-0 rounded-lg border-4 border-transparent hover:border-gradient-to-r from-pink-500 via-purple-500 to-blue-500 transition-all"></div>
