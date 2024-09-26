@@ -32,18 +32,20 @@ export default function Projects() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {filteredProjects.map((project) => (
-            <div key={project.title} className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl">
-              <div className="relative w-full h-48">
+            <div key={project.title} className="relative rounded-lg shadow-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-2xl hover:backdrop-blur-sm hover:shadow-blue-500/50">
+              <div className="absolute inset-0 rounded-lg border-4 border-transparent hover:border-gradient-to-r from-pink-500 via-purple-500 to-blue-500 transition-all"></div>
+              <div className="relative w-full bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 rounded-lg">
                 <Image
                   src={project.image}
                   alt={project.title}
-                  layout="fill"
+                  width={500}
+                  height={300}
                   objectFit="cover"
                   className="transition-transform duration-500 ease-in-out transform hover:scale-110"
                   loading="lazy"
                 />
               </div>
-              <div className="p-6 bg-gray-800">
+              <div className="relative p-6 bg-gray-800 rounded-b-lg">
                 <div className="flex items-center justify-between mb-4">
                   <h2 className="text-3xl font-bold text-white">{project.title}</h2>
                   <span className="text-sm text-gray-400">{project.category}</span>
