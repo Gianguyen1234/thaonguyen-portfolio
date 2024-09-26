@@ -5,7 +5,7 @@ export default function Contact() {
         <div className="text-center mb-10">
           <h1 className="text-4xl font-semibold text-white mb-4">Contact Me</h1>
           <p className="text-lg text-gray-300">
-            I’m eager to hear from you. Please reach out with any questions or opportunities for collaboration.
+           I’m excited to hear from you. Please contact me if you have any questions or ideas to work together.
           </p>
         </div>
   
