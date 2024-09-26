@@ -5,7 +5,7 @@ import Filter from '../components/filter';
 import Image from 'next/image';
 
 const allProjects = [
-  { title: 'PHP E-commerce Platform - Clothing Store', category: 'PHP', image: 'https://via.placeholder.com/500x300', description: 'Features:browse products,shopping cart, place orders, and receive support via a question-based chatbot,authentication, order management, product history, product comments, and admin panel ', githubLink: 'https://github.com/Gianguyen1234/PHP_WEB_ECOMMERCIAL' },
+  { title: 'PHP E-commerce Platform - Clothing Store', category: 'PHP', image: 'https://via.placeholder.com/500x300', description: 'Features:browse products,shopping cart,place orders,chatbot,authentication,order management,product history,product comments,and admin panel', githubLink: 'https://github.com/Gianguyen1234/PHP_WEB_ECOMMERCIAL' },
   { title: 'Student-management-system', category: 'Typescript', image: 'https://via.placeholder.com/500x300', description: 'a superplate project with refine ', githubLink: 'https://github.com/Gianguyen1234/Student-Management-System' },
   { title: 'Amphibians', category: 'Kotlin', image: 'https://via.placeholder.com/500x300', description: 'A jetpack compose app for calling and retrieving the Api.', githubLink: 'https://github.com/Gianguyen1234/Amphibians' },
   { title: 'Blog Post ', category: 'PHP-Laravel', image: 'https://via.placeholder.com/500x300', description: 'A blog post project with Laravel', githubLink: 'https://github.com/Gianguyen1234/BlogPost_PHP_Laravel' },
