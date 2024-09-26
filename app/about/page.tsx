@@ -72,7 +72,7 @@ export default function About() {
         {/* Call to Action */}
         <div className="text-center mt-8">
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:nguyenluthao252@gmail.com"
             className="inline-block px-6 py-3 text-white bg-blue-500 hover:bg-blue-600 font-medium rounded-lg shadow-md transition-all"
           >
             Get in Touch
