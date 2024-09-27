@@ -263,7 +263,7 @@ export default function Home() {
 
       {/* Footer Section */}
       <footer className="w-full bg-gray-900 py-6 text-center">
-        <p className="text-sm text-gray-500">© 2024 My Portfolio | Designed by Me</p>
+        <p className="text-sm text-gray-500">© 2024 TN Portfolio | Designed by Me</p>
         <div className="flex justify-center mt-4">
           <a href="https://github.com/" className="text-gray-500 mx-2 hover:text-white">
             GitHub
