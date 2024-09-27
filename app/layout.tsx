@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Thaonguyen's Portfolio",
   description: "Showcasing my projects, skills, and experience.",
   icons: {
-    icon: "https://tinypng.com/static/images/george-account-page.webp", // Path to your favicon in the public folder
+    icon: "https://tinypng.com/static/images/george-account-page.webp", 
   },
 };
 
