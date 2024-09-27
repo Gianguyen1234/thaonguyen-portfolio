@@ -93,7 +93,7 @@ export default function Contact() {
 
         {/* ReCAPTCHA (Placeholder for now) */}
         <div className="bg-gray-900 p-3 rounded-md text-gray-400 text-center">
-          ReCAPTCHA placeholder (haven't integrated yet)
+          ReCAPTCHA placeholder 
         </div>
 
         <button
