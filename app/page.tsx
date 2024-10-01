@@ -192,7 +192,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <p className="text-md text-gray-300">
-              "An exceptional developer with a keen eye for detail. Their work speaks for itself!"
+            &quot;An exceptional developer with a keen eye for detail. Their work speaks for itself!&quot;
             </p>
             <p className="text-right font-bold text-blue-400">- Client A</p>
           </motion.div>
@@ -203,7 +203,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
           >
             <p className="text-md text-gray-300">
-              "A pleasure to work with. The project was delivered on time and exceeded my expectations."
+            &quot;A pleasure to work with. The project was delivered on time and exceeded my expectations.&quot;
             </p>
             <p className="text-right font-bold text-blue-400">- Client B</p>
           </motion.div>
