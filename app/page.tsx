@@ -30,17 +30,6 @@ export default function Home() {
       
       {/* Header Section */}
       <section className="text-center py-20 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <Image
-            src="https://pm1.aminoapps.com/6971/12fc2805565bbd6d1aa8a532d81b5d62c431fccdr1-681-979v2_hq.jpg" 
-            alt="Avatar"
-            width={500}
-            height={500}
-            quality={75}
-            className="object-cover w-full h-full"
-          />
-        </div>
-
         <div className="relative">
           <motion.h1
             className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight"
