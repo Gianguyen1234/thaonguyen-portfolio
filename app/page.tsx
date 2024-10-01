@@ -32,7 +32,7 @@ export default function Home() {
       <section className="text-center py-20 px-6 relative overflow-hidden">
         <div className="relative">
           <motion.h1
-            className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight"
+            className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight text-shadow bg-gradient-to-r from-blue-500 via-cyan-600 to-blue-700 text-transparent bg-clip-text"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -49,7 +49,7 @@ export default function Home() {
           </motion.p>
           <motion.a
             href="/projects"
-            className="mt-4 inline-block bg-gradient-to-r from-blue-500 to-green-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-gradient-to-l hover:from-green-500 hover:to-blue-500 transition duration-300 transform hover:scale-105 font-semibold"
+            className="mt-4 inline-block bg-gradient-to-r from-blue-500 to-green-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-gradient-to-l hover:from-green-500 hover:to-blue-500 transition duration-300 transform hover:shadow-cyan-400"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
@@ -83,13 +83,15 @@ export default function Home() {
         >
           <h2 className="text-3xl font-bold mb-4 relative">About Me</h2>
           <p className="text-lg">
-            I am an enthusiastic developer with a passion for building dynamic and engaging web applications. As a dedicated self-learner, I am actively developing my skills in PHP and other web technologies. This portfolio reflects my commitment to continuous learning and showcases the practical work I have done so far.
+            I am an enthusiastic developer with a passion for building dynamic and engaging web applications. 
+            As a dedicated self-learner, I am actively developing my skills in PHP and other web technologies. 
+            This portfolio reflects my commitment to continuous learning and showcases the practical work I have done so far.
           </p>
 
           {/* Customized Button */}
           <motion.a
             href="/path/to/your-cv.pdf" 
-            className="mt-4 inline-block bg-gradient-to-r from-blue-500 to-green-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-gradient-to-l hover:from-green-500 hover:to-blue-500 transition duration-300 transform hover:scale-105 font-semibold"
+            className="mt-4 inline-block bg-gradient-to-r from-blue-500 to-green-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-gradient-to-l hover:from-green-500 hover:to-blue-500 transition duration-300 transform hover:shadow-cyan-400"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
