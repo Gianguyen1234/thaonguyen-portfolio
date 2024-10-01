@@ -49,7 +49,7 @@ export default function Home() {
           </motion.p>
           <motion.a
             href="/projects"
-            className="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105"
+            className="mt-4 inline-block bg-gradient-to-r from-blue-500 to-green-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-gradient-to-l hover:from-green-500 hover:to-blue-500 transition duration-300 transform hover:scale-105 font-semibold"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
