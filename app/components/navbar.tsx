@@ -32,12 +32,12 @@ export default function Navbar() {
 
           {/* Navigation Links */}
           <div className={`flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-4 ${isOpen ? 'flex' : 'hidden'} md:flex`}>
-          <Link href="/" className=" px-3 py-2 navbar-link flex items-center hover:text-yellow-300">
+          <Link href="/" className="px-3 py-2 navbar-link flex items-center hover:text-yellow-300">
   <i className="fas fa-home"></i>
   <span className="ml-1">Home</span>
 </Link>
 
-            <Link href="/about" className=" px-3 py-2 navbar-link flex items-center hover:text-yellow-300 ">
+            <Link href="/about" className="px-3 py-2 navbar-link flex items-center hover:text-yellow-300 ">
               <i className="fas fa-user"></i>
               <span className="ml-1">About</span>
             </Link>
