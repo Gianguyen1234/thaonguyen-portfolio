@@ -25,3 +25,28 @@ body {
     text-wrap: balance;
   }
 }
+.navbar-link {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: yellow;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+.logo-icon:hover {
+  transform: rotate(360deg);
+  transition: transform 0.6s ease;
+}
+
+

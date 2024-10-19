@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-gray-800 p-4 text-white">
+      <nav className="bg-gray-800 p-4 text-white sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo or Brand */}
           <div className="text-lg font-bold flex items-center">
@@ -32,19 +32,20 @@ export default function Navbar() {
 
           {/* Navigation Links */}
           <div className={`flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-4 ${isOpen ? 'flex' : 'hidden'} md:flex`}>
-            <Link href="/" className="px-3 py-2 transition-transform transform hover:scale-105 hover:text-yellow-300 flex items-center">
-              <i className="fas fa-home"></i>
-              <span className="ml-1">Home</span>
-            </Link>
-            <Link href="/about" className="px-3 py-2 transition-transform transform hover:scale-105 hover:text-yellow-300 flex items-center">
+          <Link href="/" className=" px-3 py-2 navbar-link flex items-center hover:text-yellow-300">
+  <i className="fas fa-home"></i>
+  <span className="ml-1">Home</span>
+</Link>
+
+            <Link href="/about" className=" px-3 py-2 navbar-link flex items-center hover:text-yellow-300 ">
               <i className="fas fa-user"></i>
               <span className="ml-1">About</span>
             </Link>
-            <Link href="/projects" className="px-3 py-2 transition-transform transform hover:scale-105 hover:text-yellow-300 flex items-center">
+            <Link href="/projects" className="px-3 py-2  navbar-link flex items-center hover:text-yellow-300">
               <i className="fas fa-briefcase"></i>
               <span className="ml-1">Projects</span>
             </Link>
-            <Link href="/contact" className="px-3 py-2 transition-transform transform hover:scale-105 hover:text-yellow-300 flex items-center">
+            <Link href="/contact" className="px-3 py-2 navbar-link flex items-center hover:text-yellow-300">
               <i className="fas fa-envelope"></i>
               <span className="ml-1">Contact</span>
             </Link>
