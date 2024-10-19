@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 import { FaFacebook, FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa';
-import { FaQuoteLeft } from 'react-icons/fa';
 import Avatar from 'react-avatar';
 
 export default function Home() {
