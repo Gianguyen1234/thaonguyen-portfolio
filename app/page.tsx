@@ -5,7 +5,8 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 import { FaFacebook, FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa';
-
+import { FaQuoteLeft } from 'react-icons/fa';
+import Avatar from 'react-avatar';
 
 export default function Home() {
   const [showScroll, setShowScroll] = useState(false);
@@ -277,40 +278,47 @@ export default function Home() {
 </section>
 
       {/* Testimonials Section */}
-      <section className="bg-gray-800 p-8 rounded-lg my-12 mx-4 max-w-6xl">
-        <motion.h2
-          className="text-4xl font-bold mb-6 text-center text-white"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          Testimonials
-        </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <motion.div
-            className="bg-gray-700 p-6 rounded-lg shadow-xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <p className="text-md text-gray-300">
-            &quot;An exceptional developer with a keen eye for detail. Their work speaks for itself!&quot;
-            </p>
-            <p className="text-right font-bold text-blue-400">- Client A</p>
-          </motion.div>
-          <motion.div
-            className="bg-gray-700 p-6 rounded-lg shadow-xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <p className="text-md text-gray-300">
-            &quot;A pleasure to work with. The project was delivered on time and exceeded my expectations.&quot;
-            </p>
-            <p className="text-right font-bold text-blue-400">- Client B</p>
-          </motion.div>
-        </div>
-      </section>
+      <section className="bg-gray-800 p-8 rounded-lg my-12 mx-4 max-w-6xl testimonial-background">
+  <motion.h2
+    className="text-4xl font-bold mb-6 text-center text-white"
+    initial={{ opacity: 0, y: -50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+  >
+    Testimonials
+  </motion.h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <motion.div
+      className="bg-gray-700 p-6 rounded-lg shadow-xl hover-effect"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <div className="flex items-center mb-4">
+        <Avatar name="Client A" round size="40" />
+        <p className="ml-4 text-md client-quote">
+          &quot;An exceptional developer with a keen eye for detail. Their work speaks for itself!&quot;
+        </p>
+      </div>
+      <p className="text-right client-name">- Client A</p>
+    </motion.div>
+
+    <motion.div
+      className="bg-gray-700 p-6 rounded-lg shadow-xl hover-effect"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+      <div className="flex items-center mb-4">
+        <Avatar name="Client B" round size="40" />
+        <p className="ml-4 text-md client-quote">
+          &quot;A pleasure to work with. The project was delivered on time and exceeded my expectations.&quot;
+        </p>
+      </div>
+      <p className="text-right client-name">- Client B</p>
+    </motion.div>
+  </div>
+</section>
 
       {/* Scroll to Top Button */}
       {showScroll && (
