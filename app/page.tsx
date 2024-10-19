@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
-import { FaFacebook, FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa'; // Added LinkedIn icon
+import { FaFacebook, FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+
 
 export default function Home() {
   const [showScroll, setShowScroll] = useState(false);
@@ -133,46 +134,147 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Skills Section */}
-      <section className="bg-gray-800 p-8 rounded-lg my-12 mx-4 max-w-6xl">
-        <motion.h2
-          className="text-4xl font-bold mb-6 text-center text-white"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          My Skills
-        </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <motion.div
-            className="bg-gray-700 p-6 rounded-lg shadow-xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h3 className="text-xl font-bold mb-3 text-blue-400">JavaScript</h3>
-            <p className="text-md text-gray-300">Proficient in ES6+, React, Node.js, and modern web development practices.</p>
-          </motion.div>
-          <motion.div
-            className="bg-gray-700 p-6 rounded-lg shadow-xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h3 className="text-xl font-bold mb-3 text-blue-400">PHP</h3>
-            <p className="text-md text-gray-300">Experience with Laravel and building scalable, robust back-end systems.</p>
-          </motion.div>
-          <motion.div
-            className="bg-gray-700 p-6 rounded-lg shadow-xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h3 className="text-xl font-bold mb-3 text-blue-400">CSS & UI Design</h3>
-            <p className="text-md text-gray-300">Skilled in responsive design, TailwindCSS, and creating user-friendly interfaces.</p>
-          </motion.div>
-        </div>
-      </section>
+      {/* Skills Section */}    
+<section className="bg-gradient-to-r from-gray-800 to-gray-900 p-8 rounded-lg my-12 mx-4 max-w-6xl shadow-2xl">
+  <motion.h2
+    className="text-4xl font-bold mb-6 text-center text-white"
+    initial={{ opacity: 0, y: -50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+  >
+    My Skills
+  </motion.h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
+    {/* JavaScript Skill Card */}
+    <motion.div
+      className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="text-yellow-400 text-6xl mb-4">
+        <i className="fab fa-js-square"></i>
+      </div>
+      <h3 className="text-xl font-bold mb-3 text-blue-400">JavaScript</h3>
+      <p className="text-md text-gray-300">
+        Proficient in ES6+, React, Node.js, and modern web development practices.
+      </p>
+    </motion.div>
+
+    {/* PHP Skill Card */}
+    <motion.div
+      className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="text-indigo-400 text-6xl mb-4">
+        <i className="fab fa-php"></i>
+      </div>
+      <h3 className="text-xl font-bold mb-3 text-blue-400">PHP</h3>
+      <p className="text-md text-gray-300">
+        Experience with Laravel and building scalable, robust back-end systems.
+      </p>
+    </motion.div>
+
+    {/* CSS & UI Design Skill Card */}
+    <motion.div
+      className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="text-cyan-400 text-6xl mb-4">
+        <i className="fas fa-paint-brush"></i>
+      </div>
+      <h3 className="text-xl font-bold mb-3 text-blue-400">CSS & UI Design</h3>
+      <p className="text-md text-gray-300">
+        Skilled in responsive design, TailwindCSS, and creating user-friendly interfaces.
+      </p>
+    </motion.div>
+
+    {/* Python Skill Card */}
+    <motion.div
+      className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="text-green-400 text-6xl mb-4">
+        <i className="fab fa-python"></i>
+      </div>
+      <h3 className="text-xl font-bold mb-3 text-blue-400">Python</h3>
+      <p className="text-md text-gray-300">
+        Experience with data analysis, automation, and back-end development using Python.
+      </p>
+    </motion.div>
+
+    {/* MySQL Skill Card */}
+    <motion.div
+      className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="text-blue-400 text-6xl mb-4">
+        <i className="fas fa-database"></i>
+      </div>
+      <h3 className="text-xl font-bold mb-3 text-blue-400">MySQL</h3>
+      <p className="text-md text-gray-300">
+        Proficient in designing, querying, and optimizing relational databases using MySQL.
+      </p>
+    </motion.div>
+
+    {/* DevOps Skill Card */}
+    <motion.div
+      className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="text-orange-400 text-6xl mb-4">
+        <i className="fas fa-cogs"></i>
+      </div>
+      <h3 className="text-xl font-bold mb-3 text-blue-400">DevOps</h3>
+      <p className="text-md text-gray-300">
+        Familiar with Docker, CI/CD pipelines, and cloud infrastructure management.
+      </p>
+    </motion.div>
+
+    {/* Git & GitHub Skill Card */}
+    <motion.div
+      className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="text-red-400 text-6xl mb-4">
+        <i className="fab fa-git-alt"></i>
+      </div>
+      <h3 className="text-xl font-bold mb-3 text-blue-400">Git & GitHub</h3>
+      <p className="text-md text-gray-300">
+        Skilled in version control, branching, and collaboration using Git & GitHub.
+      </p>
+    </motion.div>
+
+    {/* TypeScript Skill Card */}
+    <motion.div
+      className="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-2xl transition-transform duration-300"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="text-blue-400 text-6xl mb-4">
+        <i className="fab fa-js"></i> {/* Icon can be replaced with a TypeScript logo */}
+      </div>
+      <h3 className="text-xl font-bold mb-3 text-blue-400">TypeScript</h3>
+      <p className="text-md text-gray-300">
+        Strong knowledge of TypeScript for creating scalable and maintainable applications.
+      </p>
+    </motion.div>
+  </div>
+</section>
 
       {/* Testimonials Section */}
       <section className="bg-gray-800 p-8 rounded-lg my-12 mx-4 max-w-6xl">
