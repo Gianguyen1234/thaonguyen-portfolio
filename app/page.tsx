@@ -117,7 +117,7 @@ export default function Home() {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/yourprofile"
+              href="https://github.com/Gianguyen1234"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-[#F0F0F0] text-3xl transition duration-300"
