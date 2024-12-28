@@ -125,11 +125,12 @@ export default function Home() {
               <FaGithub />
             </a>
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:nguyenluthao252@gmail.com"
               className="text-white hover:text-[#F0F0F0] text-3xl transition duration-300"
             >
               <FaEnvelope />
             </a>
+            
           </div>
         </motion.div>
       </section>
