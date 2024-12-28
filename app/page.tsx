@@ -46,7 +46,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            I am passionate about crafting dynamic web applications and continuously learning new technologies. This portfolio showcases my self-driven journey into PHP development and the projects I have been working on.
+            Nice to meet you all.I am Thao Nguyen, a passionate developer who want to level my skils by creating dynamic web or applications.
           </motion.p>
           <motion.a
             href="/projects"
@@ -84,7 +84,7 @@ export default function Home() {
         >
           <h2 className="text-3xl font-bold mb-4 relative">About Me</h2>
           <p className="text-lg">
-            I am an enthusiastic developer with a passion for building dynamic and engaging web applications. As a dedicated self-learner, I am actively developing my skills in PHP and other web technologies. This portfolio reflects my commitment to continuous learning and showcases the practical work I have done so far.
+           Well, to talk about me. I have learnt anything that relavants to the technology and programming to make my life better. I also create a youtube channel to share my experience to other people.
           </p>
 
           {/* Customized Button */}
