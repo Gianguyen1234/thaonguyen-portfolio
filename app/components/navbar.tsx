@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import { useState } from "react";
+import Link from "next/link";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,34 +18,57 @@ export default function Navbar() {
           {/* Logo or Brand */}
           <div className="text-lg font-bold flex items-center">
             <Link href="/" className="flex items-center cursor-pointer">
-              <i className="fas fa-user-circle fa-2x mr-2"></i>
-              TN
+              <i className="fas fa-leaf fa-2x text-green-400 mr-2"></i>{" "}
+              {/* Replace with a meaningful icon */}
+              <span className="text-white hover:text-green-300 transition-colors duration-300">
+                Thao Nguyen
+              </span>
             </Link>
           </div>
 
           {/* Hamburger Icon for Mobile */}
           <div className="md:hidden">
-            <button onClick={toggleMenu} className="text-white focus:outline-none" aria-label="Toggle navigation menu">
-              <i className={`fas fa-${isOpen ? 'times' : 'bars'} fa-2x`}></i>
+            <button
+              onClick={toggleMenu}
+              className="text-white focus:outline-none"
+              aria-label="Toggle navigation menu"
+            >
+              <i className={`fas fa-${isOpen ? "times" : "bars"} fa-2x`}></i>
             </button>
           </div>
 
           {/* Navigation Links */}
-          <div className={`flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-4 ${isOpen ? 'flex' : 'hidden'} md:flex`}>
-          <Link href="/" className="px-3 py-2 navbar-link flex items-center hover:text-yellow-300">
-  <i className="fas fa-home"></i>
-  <span className="ml-1">Home</span>
-</Link>
+          <div
+            className={`flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-4 ${
+              isOpen ? "flex" : "hidden"
+            } md:flex`}
+          >
+            <Link
+              href="/"
+              className="px-3 py-2 navbar-link flex items-center hover:text-yellow-300"
+            >
+              <i className="fas fa-home"></i>
+              <span className="ml-1">Home</span>
+            </Link>
 
-            <Link href="/about" className="px-3 py-2 navbar-link flex items-center hover:text-yellow-300 ">
+            <Link
+              href="/about"
+              className="px-3 py-2 navbar-link flex items-center hover:text-yellow-300 "
+            >
               <i className="fas fa-user"></i>
               <span className="ml-1">About</span>
             </Link>
-            <Link href="/projects" className="px-3 py-2  navbar-link flex items-center hover:text-yellow-300">
+            <Link
+              href="/projects"
+              className="px-3 py-2  navbar-link flex items-center hover:text-yellow-300"
+            >
               <i className="fas fa-briefcase"></i>
               <span className="ml-1">Projects</span>
             </Link>
-            <Link href="/contact" className="px-3 py-2 navbar-link flex items-center hover:text-yellow-300">
+            <Link
+              href="/contact"
+              className="px-3 py-2 navbar-link flex items-center hover:text-yellow-300"
+            >
               <i className="fas fa-envelope"></i>
               <span className="ml-1">Contact</span>
             </Link>
@@ -63,7 +86,10 @@ export default function Navbar() {
           <i className="fas fa-user"></i>
           <span className="text-xs">About</span>
         </Link>
-        <Link href="/projects" className="flex flex-col items-center text-white">
+        <Link
+          href="/projects"
+          className="flex flex-col items-center text-white"
+        >
           <i className="fas fa-briefcase"></i>
           <span className="text-xs">Projects</span>
         </Link>
