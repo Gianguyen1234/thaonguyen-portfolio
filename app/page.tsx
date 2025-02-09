@@ -54,7 +54,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.3 }}
           >
             Nice to meet you all.I am Thao Nguyen, a passionate developer who
-            want to level my skils by creating dynamic web or applications.
+            want to improve level my skils by creating dynamic web or applications.
           </motion.p>
           <motion.a
             href="/projects"
