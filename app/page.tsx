@@ -16,6 +16,8 @@ import {
   FaTerminal
 } from "react-icons/fa";
 import { SiHashnode, SiTypescript, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { SiPhp, SiFastapi, SiSpring } from "react-icons/si";
+import { FaLock, FaTachometerAlt } from "react-icons/fa";
 import { DiNodejs, DiReact } from "react-icons/di";
 import Avatar from "react-avatar";
 
@@ -54,10 +56,54 @@ export default function Home() {
     {
       title: "Backend Development",
       skills: [
-        { name: "Node.js", icon: <DiNodejs className="text-green-500" />, level: 80 },
-        { name: "Express.js", icon: <FaServer className="text-gray-400" />, level: 75 },
-        { name: "Spring Boot", icon: <FaCode className="text-green-600" />, level: 70 },
-        { name: "PHP", icon: <FaCode className="text-indigo-400" />, level: 65 }
+        { 
+          name: "PHP & Laravel", 
+          icon: <SiPhp className="text-indigo-400" />, 
+          level: 85,
+          description: "Experienced in building robust web applications with Laravel framework, including RESTful APIs, authentication systems, and database management."
+        },
+        { 
+          name: "FastAPI", 
+          icon: <SiFastapi className="text-teal-400" />, 
+          level: 80,
+          description: "Skilled in creating high-performance APIs with Python's FastAPI, implementing async endpoints, data validation, and OpenAPI documentation."
+        },
+        { 
+          name: "Node.js & Express", 
+          icon: <DiNodejs className="text-green-500" />, 
+          level: 75,
+          description: "Proficient in building scalable server-side applications with Express.js, middleware integration, and REST API development."
+        },
+        { 
+          name: "Spring Boot", 
+          icon: <SiSpring className="text-green-600" />, 
+          level: 70,
+          description: "Knowledge of Java Spring Boot for enterprise-grade applications, dependency injection, and building secure backend services."
+        },
+        { 
+          name: "API Design", 
+          icon: <FaCode className="text-blue-400" />, 
+          level: 80,
+          description: "Strong understanding of REST principles, GraphQL, authentication (JWT, OAuth), rate limiting, and API documentation."
+        },
+        { 
+          name: "Microservices", 
+          icon: <FaServer className="text-purple-400" />, 
+          level: 70,
+          description: "Experience with designing and implementing microservices architecture, service communication, and containerization."
+        },
+        {
+          name: "Authentication",
+          icon: <FaLock className="text-red-400" />,
+          level: 80,
+          description: "Implemented various auth systems including JWT, OAuth 2.0, session-based auth, and role-based access control."
+        },
+        {
+          name: "Performance Optimization",
+          icon: <FaTachometerAlt className="text-orange-400" />,
+          level: 75,
+          description: "Experience in query optimization, caching strategies (Redis), and load testing to ensure high-performance backend systems."
+        }
       ]
     },
     {
@@ -150,7 +196,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6 text-cyan-400">About Me</h2>
           <div className="space-y-4 text-gray-300">
             <p>
-              As a self-taught developer with 3 years of experience, I've mastered the art 
+              As a self-taught developer with 3 years of experience, I have mastered the art 
               of turning ideas into functional applications. My journey has equipped me with 
               a unique perspective on problem-solving and efficient learning.
             </p>
@@ -296,7 +342,7 @@ export default function Home() {
                   <p className="text-sm text-cyan-400">{testimonial.role}</p>
                 </div>
               </div>
-              <p className="text-gray-300 italic">"{testimonial.content}"</p>
+              <p className="text-gray-300 italic">&quot;{testimonial.content}&quot;</p>
               <div className="flex mt-4">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
