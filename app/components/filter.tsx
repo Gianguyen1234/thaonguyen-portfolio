@@ -8,6 +8,10 @@ const categories = [
   'Kotlin',
   'Typescript',
   'PHP-Laravel',
+  'Nexjs',
+  'Astro',
+  'Node.js',
+  'React Native',
 ];
 
 interface FilterProps {

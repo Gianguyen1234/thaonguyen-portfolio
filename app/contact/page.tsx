@@ -39,7 +39,7 @@ export default function Contact() {
       >
         <h1 className="text-4xl font-semibold text-white mb-4">Contact Me</h1>
         <p className="text-lg text-gray-300">
-          I’m excited to hear from you. Please contact me if you have any questions or ideas to work together.
+          I am excited to hear from you. Please contact me if you have any questions or ideas to work together.
         </p>
       </motion.div>
 
