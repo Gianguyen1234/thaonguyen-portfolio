@@ -10,7 +10,7 @@ const allProjects = [
     title: "Developer Portfolio",
     subtitle: "Professional Showcase Website",
     category: "Next.js",
-    image: "/images/projects/thaonguyen-porfolio.png", // Add your portfolio screenshot
+    image: "/images/projects/thaonguyen-portfolio.png", // Add your portfolio screenshot
     description:
       "A modern, interactive portfolio website showcasing my skills, projects, and professional journey.",
     features: [

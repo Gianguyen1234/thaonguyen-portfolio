@@ -40,7 +40,7 @@ export default function RootLayout({
         <Navbar />
 
         {/* Main content */}
-        <main className="flex-grow">{children}</main>
+        <main className="flex-grow ">{children}</main>
 
         {/* Add the Footer component */}
         <Footer />
