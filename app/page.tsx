@@ -318,13 +318,13 @@ export default function Home() {
             {
               name: "Alex Johnson",
               role: "CEO, TechStart Inc.",
-              content: "Thao delivered our e-commerce platform ahead of schedule with exceptional attention to detail. His React skills transformed our complex requirements into a seamless user experience that increased our conversion rate by 30%.",
+              content: "Thao delivered our e-commerce platform ahead of schedule with exceptional attention to detail. Her React skills transformed our complex requirements into a seamless user experience that increased our conversion rate by 30%.",
               avatar: "AJ"
             },
             {
               name: "Sarah Miller",
               role: "Product Manager, MobileFirst",
-              content: "Working with Thao on our React Native app was a game-changer. He not only implemented the features perfectly but also suggested performance optimizations that reduced our app load time by 40%.",
+              content: "Working with Thao on our React Native app was a game-changer. She not only implemented the features perfectly but also suggested performance optimizations that reduced our app load time by 40%.",
               avatar: "SM"
             }
           ].map((testimonial, index) => (
