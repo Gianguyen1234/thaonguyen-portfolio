@@ -190,7 +190,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            Full Stack Developer & Tech Educator
+            Full Stack Developer & Content Creator
           </motion.h2>
           <motion.p
             className="text-lg md:text-xl mb-8 mx-auto max-w-3xl text-gray-300 leading-relaxed"
@@ -209,7 +209,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.6 }}
           >
             <a
-              href="/projects"
+              href="/contact"
               className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-3 px-8 rounded-full shadow-lg hover:bg-gradient-to-l hover:from-cyan-500 hover:to-blue-500 transition-all duration-300 hover:shadow-cyan-400/50 font-semibold text-lg"
             >
               View My Work
