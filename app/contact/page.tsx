@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { FaYoutube, FaGithub, FaPencilAlt, FaExternalLinkAlt, FaFacebook } from 'react-icons/fa';
+import { FaYoutube, FaGithub, FaPencilAlt, FaExternalLinkAlt, FaFacebook, FaCoffee } from 'react-icons/fa';
 import { SiTelegram } from 'react-icons/si';
 
 export default function VideoShowcase() {
@@ -214,11 +214,56 @@ export default function VideoShowcase() {
           </div>
         </motion.div>
 
+        {/* Donate Section - Improved */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="mb-16 bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-xl p-8 border border-gray-700"
+        >
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center justify-center bg-gradient-to-r from-yellow-600 to-yellow-800 text-white p-3 rounded-full mb-4">
+              <FaCoffee className="text-2xl mr-2" />
+              <span className="font-medium">SUPPORT</span>
+            </div>
+            <h2 className="text-3xl font-bold text-white mb-2">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Fuel</span> My Creativity
+            </h2>
+            <p className="text-gray-300 max-w-2xl mx-auto">
+              Your support helps me create more free content and open-source projects
+            </p>
+          </div>
+
+          <div className="max-w-md mx-auto">
+            <motion.a
+              href="https://buymeacoffee.com/holy_dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ scale: 0.95 }}
+              animate={{ scale: 1 }}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
+              className="flex flex-col items-center p-6 bg-gradient-to-br from-yellow-500/10 to-yellow-600/20 rounded-xl border border-yellow-500/30 hover:border-yellow-400 transition-all shadow-lg hover:shadow-yellow-500/20"
+            >
+              <div className="mb-4 p-4 bg-yellow-500/20 rounded-full">
+                <FaCoffee className="text-4xl text-yellow-400" />
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-2">Buy Me a Coffee</h3>
+              <p className="text-gray-300 text-center mb-4">
+                A small donation goes a long way in supporting my work
+              </p>
+              <div className="px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white rounded-lg font-medium">
+                Support Now
+              </div>
+            </motion.a>
+          </div>
+        </motion.div>
+
         {/* Channel CTA */}
         <motion.div
           initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.5 }}
           className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-xl p-8 sm:p-10 border border-gray-700 text-center"
         >
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">

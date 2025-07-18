@@ -10,8 +10,8 @@ import {
   FaEnvelope, 
   FaCode,
   FaGithub,
-  FaLinkedin,
-  FaYoutube
+  FaYoutube,
+  FaCoffee
 } from "react-icons/fa";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import { SiHashnode } from "react-icons/si";
@@ -40,8 +40,8 @@ export default function Navbar() {
   ];
 
   const socialLinks = [
+    { icon: <FaCoffee />, url: "https://buymeacoffee.com/holy_dev" },
     { icon: <FaGithub />, url: "https://github.com/Gianguyen1234" },
-    { icon: <FaLinkedin />, url: "https://linkedin.com/in/yourprofile" },
     { icon: <FaYoutube />, url: "https://www.youtube.com/@dev-maniac2349" },
     { icon: <SiHashnode />, url: "https://harrypage.hashnode.dev/" }
   ];

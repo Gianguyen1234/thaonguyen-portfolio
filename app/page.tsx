@@ -19,6 +19,7 @@ import {
   FaBook,
   FaGlobe,
   FaHistory,
+  FaCoffee
 } from "react-icons/fa";
 import {
   SiHashnode,
@@ -266,46 +267,56 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Social Media Icons */}
-          <div className="flex justify-center space-x-4 mt-8">
-            {[
-              {
-                icon: <FaGithub />,
-                url: "https://github.com/Gianguyen1234",
-                color: "hover:text-gray-300",
-              },
-              {
-                icon: <FaLinkedin />,
-                url: "https://linkedin.com/in/yourprofile",
-                color: "hover:text-blue-400",
-              },
-              {
-                icon: <FaYoutube />,
-                url: "https://www.youtube.com/@dev-maniac2349",
-                color: "hover:text-red-500",
-              },
-              {
-                icon: <SiHashnode />,
-                url: "https://harrypage.hashnode.dev/",
-                color: "hover:text-blue-300",
-              },
-              {
-                icon: <FaEnvelope />,
-                url: "mailto:nguyenluthao252@gmail.com",
-                color: "hover:text-cyan-400",
-              },
-            ].map((social, index) => (
-              <motion.a
-                key={index}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`text-2xl text-gray-400 ${social.color} transition-colors duration-300`}
-                whileHover={{ y: -3 }}
-              >
-                {social.icon}
-              </motion.a>
-            ))}
+          {/* Social Media Icons & Buy Me a Coffee */}
+          <div className="flex flex-col items-center mt-8">
+            <div className="flex justify-center space-x-4 mb-4">
+              {[
+                {
+                  icon: <FaGithub />,
+                  url: "https://github.com/Gianguyen1234",
+                  color: "hover:text-gray-300",
+                },
+                {
+                  icon: <FaYoutube />,
+                  url: "https://www.youtube.com/@dev-maniac2349",
+                  color: "hover:text-red-500",
+                },
+                {
+                  icon: <SiHashnode />,
+                  url: "https://harrypage.hashnode.dev/",
+                  color: "hover:text-blue-300",
+                },
+                {
+                  icon: <FaEnvelope />,
+                  url: "mailto:nguyenluthao252@gmail.com",
+                  color: "hover:text-cyan-400",
+                },
+              ].map((social, index) => (
+                <motion.a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`text-2xl text-gray-400 ${social.color} transition-colors duration-300`}
+                  whileHover={{ y: -3 }}
+                >
+                  {social.icon}
+                </motion.a>
+              ))}
+            </div>
+            
+            {/* Buy Me a Coffee Button */}
+            <motion.a
+              href="https://buymeacoffee.com/holy_dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-4 py-2 rounded-lg hover:shadow-lg hover:shadow-yellow-500/30 transition-all"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FaCoffee className="mr-2" />
+              Buy Me a Coffee
+            </motion.a>
           </div>
         </motion.div>
       </section>
